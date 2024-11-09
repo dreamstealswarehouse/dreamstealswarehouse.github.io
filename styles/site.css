@@ -624,7 +624,7 @@ hr.solid {
     .main-nav ul {
 
         opacity: 0;
-     
+        height:0;
         overflow: hidden;
         list-style: none;
         background-color: #3aafb9ff;
@@ -634,7 +634,7 @@ hr.solid {
     /* Display the menu when the checkbox is checked */
     #menu-toggle:checked+.menu-icon+.main-nav ul {
         opacity: 1;
-        
+        height: 0;
         transition: 0.5s;
     }
 
