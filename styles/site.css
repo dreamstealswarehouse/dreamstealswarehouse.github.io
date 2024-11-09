@@ -1,0 +1,695 @@
+:root {
+    --rich-black: #001011ff;
+    --midnight-green: #093a3eff;
+    --verdigris: #3aafb9ff;
+    --electric-blue: #64e9eeff;
+    --light-sky-blue: #97c8ebff;
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Bahnschrift Light", monospace;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    color: var(--light-sky-blue);
+    background-color: var(--rich-black);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Banner styles */
+.banner {
+    font-size: larger;
+    background-color: var(--light-sky-blue);
+    padding: 20px;
+    display: block;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+}
+
+.banner h1 {
+    margin-top: 30px;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: var(--midnight-green);
+    text-shadow: 2px 2px 2px;
+
+
+}
+
+
+
+
+
+
+#logo {
+
+    position: absolute;
+    max-width: 200px;
+    left: 0;
+    padding-left: 20px;
+
+}
+
+
+ul {
+    list-style-type: none;
+
+}
+
+
+
+#applianceimg:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px lch(13% 777 555),
+        0 0 7px lch(13% 777 555),
+        0 0 5px lch(13% 777 555);
+    transition-duration: 500ms;
+
+
+}
+
+#applianceimg:active {
+    transform: translateY(5px);
+    transform: scale(0.99);
+    box-shadow: 0 0 50px lch(13% 777 555),
+        0 0 15px lch(13% 777 555),
+        0 0 10px lch(13% 777 555);
+
+    transition-duration: 50ms;
+
+}
+
+#applianceimg {
+
+    width: 626px;
+    border-radius: 60px;
+    margin: 10px;
+    margin-bottom: 1px;
+
+}
+
+#mattressimg:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px lch(13% 777 555),
+        0 0 7px lch(13% 777 555),
+        0 0 10px lch(13% 777 555);
+    transition-duration: 500ms;
+}
+
+#mattressimg:active {
+    transform: translateY(5px);
+    transform: scale(0.99);
+    box-shadow: 0 0 50px lch(13% 777 555),
+        0 0 15px lch(13% 777 555),
+        0 0 10px lch(13% 777 555);
+
+    transition-duration: 50ms;
+}
+
+#mattressimg {
+    width: 705px;
+    border-radius: 70px;
+    margin: 10px;
+    margin-bottom: 1px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+
+
+#applianceheader {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    display: inline-block;
+
+}
+
+
+
+
+
+.indexsection {
+
+    padding: 10px
+}
+
+/* Navigation styles */
+.main-nav ul {
+    font-style: normal;
+    font-weight: bolder;
+    margin-top: -6px;
+    margin-bottom: 20px;
+    font-size: larger;
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #3aafb9ff;
+}
+
+.main-nav li {
+
+    margin: 0 40px;
+}
+
+.main-nav a {
+
+    text-decoration: none;
+    color: #093a3eff;
+    font-size: 1.2em;
+}
+
+
+
+/* Footer navigation styles */
+.footer-nav {
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #3aafb9ff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+
+    display: inline;
+    margin: 0 40px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #093a3eff;
+    font-size: 0.9em;
+}
+
+a:hover {
+    color: aquamarine;
+    transition-duration: 500ms;
+}
+
+.pcontact {
+    color: rgb(62, 130, 207);
+}
+
+.pcontact:hover {
+    color: #163ce3;
+}
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+    flex: 1;
+    font-size: 15px;
+}
+
+
+/* Hide the checkbox by default */
+#menu-toggle {
+
+    height: 0;
+
+}
+
+/* hide the menu icon on larger screens */
+.menu-icon {
+    display: none;
+}
+
+
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    /* center horizontal */
+}
+
+.formdivs {
+    display: flex;
+    flex-direction: column;
+    /*labels are on top of the inputs */
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #c7c6c6;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table {
+    display: inline-block;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #163ce3;
+    color: #64e9eeff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgb(8, 22, 173);
+}
+
+/* Appliances Page */
+
+.product img {
+    max-width: 45%;
+}
+
+.align {
+    width: 48%;
+    display: inline-block;
+
+}
+
+.centered {
+
+    text-align: center;
+}
+
+.overflow{
+    height: 30px;
+}
+/* bedding page */
+
+.meow {
+
+    font-style: italic;
+}
+
+
+
+
+
+/* About Us Page */
+#aboutusmain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#aboutusmain h2 {
+
+    padding-bottom: 30px;
+}
+
+.about-div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.about-div p {
+    max-width: 45%;
+    font-size: 1.1em;
+
+}
+
+/* extras zigzag*/
+.pl {
+    text-align: left;
+    top: 50%;
+    bottom: 50%;
+}
+
+.pr {
+    text-align: right;
+}
+
+.about-imgs {
+    width: 85%;
+    border-radius: 25%;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: table;
+    width: 100%;
+}
+
+[class*="col-"] {
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+
+}
+
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+hr.solid {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: antiquewhite;
+}
+
+.imagesappl {
+    width: 60%;
+    border-radius: 25%;
+    height: 35vi;
+}
+
+/*REVIEWS*/
+
+.col-6.reviewsCSS {
+    border-radius: 5px;
+    position: relative;
+}
+
+.quote {
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    filter: blur(3px);
+
+}
+
+.textinimage {
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5em;
+    text-shadow: -1px 0px 29px rgba(135, 248, 251, 1);
+    color: rgb(143, 230, 238);
+    font-family: "Playfair Display", "Bahnschrift Light", monospace;
+    font-style: oblique;
+}
+
+
+
+
+
+/*desktop specific*/
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    .imagesappl{
+        
+        width: 80%;
+        height: 40vi;
+    }
+
+    .contactimg{
+        width: 200px !important; 
+       
+        
+    }
+
+    .textinimage{
+
+        font-size: 1.2em;
+        bottom: 30%;
+    }
+
+   
+
+
+
+
+}
+
+@media (min-width: 768px) {
+
+    p {
+        font-size: 1.3em;
+    }
+
+    button {
+
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+
+        font-size: 1.5em;
+    }
+
+    .contactimg {
+
+        width: 10%;
+    }
+
+  
+
+}
+
+@media (max-width: 768px) {
+
+    .reviewsCSS {
+        width: 100%;
+    }
+
+    .row.about {
+        display: flex;
+        flex-direction: column;
+        /* Change direction to column - mobile */
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #3aafb9ff;
+    }
+
+
+    .imagesappl {
+        width: 100%;
+        height: 50vi;
+
+
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+    .main-nav li {
+        padding: 10px 0;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #applianceimg,
+    #mattressimg {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .indexsection {
+        padding: 5px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .footer-menu li {
+        display: block;
+        /* Stack vertically on smaller screens */
+        padding: 10px 0;
+    }
+
+    .footer-menu li a {
+        font-size: 20px;
+        /* Slightly bigger font for mobile */
+        padding: 15px 20px;
+        /* Increase padding for better touch support */
+    }
+
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #3aafb9ff;
+    }
+
+    .header-nav .logo a {
+        color: #093a3eff;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    /* Hide the checkbox by default */
+    #menu-toggle {
+        transition: opacity 1s ease-out;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    /* Hamburger menu icon */
+    .menu-icon {
+        font-size: 30px;
+        color: rgb(47, 138, 146);
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        padding-right: 10px;
+        margin-bottom: -10px;
+    
+
+    }
+
+
+
+    /* Hide the navigation links by default on mobile */
+    .main-nav ul {
+
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        list-style: none;
+        background-color: #3aafb9ff;
+
+    }
+
+    /* Display the menu when the checkbox is checked */
+    #menu-toggle:checked+.menu-icon+.main-nav ul {
+        opacity: 1;
+        height: auto;
+        transition: 0.5s;
+    }
+
+    /* Hide the menu icon when the menu is open */
+    #menu-toggle:checked+.menu-icon {
+        display: none;
+    }
+
+
+    .main-nav ul li a {
+        color: #093a3eff;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bolder;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        transition: padding 1s;
+    }
+
+    .main-nav ul li a:hover {
+        background-color: #2c919aff;
+    }
+
+    /* AboutUs CSS for mobile */
+
+    #aboutusmain {
+        padding: 0;
+    }
+
+    .about-imgs {
+        border-radius: 25%;
+    }
+
+    /* appliances page css */
+
+    .appliancesmain {
+        padding: 0;
+    }
+
+    .textinimage {
+        position: absolute;
+        font-weight: bold;
+        text-align: left;
+        font-size: 1.1em;
+        text-shadow: -1px 0px 29px rgba(135, 248, 251, 1);
+        color: rgb(143, 230, 238);
+        font-family: "Playfair Display", "Bahnschrift Light", monospace;
+        font-style: oblique;
+    }
+
+    .contactimg {
+
+        width: 180px;
+        margin-top: 20px;
+    }
+
+}
